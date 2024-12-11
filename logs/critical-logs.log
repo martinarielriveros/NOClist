@@ -1,0 +1,8 @@
+{"message":"Initializing the file \"logs/critical-logs.log\"","date":"2024-12-10T21:09:28.624Z"}
+{"level":"critical","message":"Service https://localhost:3000 down down down!! because TypeError: fetch failed","timestamp":"2024-12-10T21:16:00.167Z"}
+{"level":"critical","message":"Service https://localhost:3000 down down down!! because TypeError: fetch failed","timestamp":"2024-12-10T21:16:05.012Z"}
+{"level":"critical","message":"Service https://localhost:3000 down down down!! because TypeError: fetch failed","timestamp":"2024-12-10T21:16:10.013Z"}
+{"level":"critical","message":"Service https://localhost:3000 down down down!! because TypeError: fetch failed","timestamp":"2024-12-10T21:16:15.017Z"}
+{"level":"critical","message":"Service https://localhost:3000 down down down!! because TypeError: fetch failed","timestamp":"2024-12-10T21:16:20.012Z"}
+{"level":"critical","message":"Service https://localhost:3000 down down down!! because TypeError: fetch failed","timestamp":"2024-12-10T21:16:25.010Z"}
+{"level":"critical","message":"Service https://localhost:3000 down down down!! because TypeError: fetch failed","timestamp":"2024-12-10T21:16:30.014Z"}
