@@ -15,3 +15,6 @@ Create a series of tasks using clean arquitecture with typescript
     MAILER_PORT=
     MAILER_SECURE=
 ```
+
+3. Run `npm install`
+4. Run `npm run dev`

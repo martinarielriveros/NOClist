@@ -1,5 +1,7 @@
 import { LogEntity, LogSeverityLevel } from "../../entities/log.entity";
 import { LogRepository } from "../../repositories/log.repository";
+import path from "path";
+
 interface CheckServiceUseCase {
   execute(url: string): Promise<boolean>;
 }
@@ -26,10 +28,11 @@ export class CheckService implements CheckServiceUseCase {
       if (!req.ok) {
         throw new Error(`Network response was not ok on ${url}`);
       }
-      const log = new LogEntity(
-        LogSeverityLevel.low,
-        `Service ${url} up & running `
-      );
+      const log = new LogEntity({
+        level: LogSeverityLevel.low,
+        message: `Service ${url} up & running`,
+        origin: path.basename(__filename),
+      });
 
       this.LogRepository.saveLog(log);
 
@@ -37,10 +40,11 @@ export class CheckService implements CheckServiceUseCase {
 
       return true;
     } catch (error) {
-      const log = new LogEntity(
-        LogSeverityLevel.critical,
-        `Service ${url} down down down!! because ${error}`
-      );
+      const log = new LogEntity({
+        level: LogSeverityLevel.critical,
+        message: `Service ${url} down down down!! it seems ${error}`,
+        origin: path.basename(__filename),
+      });
       this.LogRepository.saveLog(log);
       this.errorCallback(`${error}`);
 

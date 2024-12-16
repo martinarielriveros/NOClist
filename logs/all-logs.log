@@ -35,3 +35,28 @@
 {"level":"critical","message":"Service https://localhost:3000 down down down!! because TypeError: fetch failed","timestamp":"2024-12-10T21:16:20.012Z"}
 {"level":"critical","message":"Service https://localhost:3000 down down down!! because TypeError: fetch failed","timestamp":"2024-12-10T21:16:25.010Z"}
 {"level":"critical","message":"Service https://localhost:3000 down down down!! because TypeError: fetch failed","timestamp":"2024-12-10T21:16:30.014Z"}
+{"level":"low","message":"Service https://google.com up & running","origin":"C:\\Users\\user\\Desktop\\Henry\\NOC\\src\\domain\\use-cases\\checks\\check-service.ts","timestamp":"2024-12-11T21:14:20.373Z"}
+{"level":"low","message":"Service https://google.com up & running","origin":"C:\\Users\\user\\Desktop\\Henry\\NOC\\src\\domain\\use-cases\\checks\\check-service.ts","timestamp":"2024-12-11T21:14:25.240Z"}
+{"level":"low","message":"Service https://google.com up & running","origin":"C:\\Users\\user\\Desktop\\Henry\\NOC\\src\\domain\\use-cases\\checks\\check-service.ts","timestamp":"2024-12-11T21:14:30.245Z"}
+{"level":"low","message":"Service https://google.com up & running","origin":"C:\\Users\\user\\Desktop\\Henry\\NOC\\src\\domain\\use-cases\\checks\\check-service.ts","timestamp":"2024-12-11T21:14:35.270Z"}
+{"level":"low","message":"Service https://google.com up & running","origin":"C:\\Users\\user\\Desktop\\Henry\\NOC\\src\\domain\\use-cases\\checks\\check-service.ts","timestamp":"2024-12-11T21:14:40.255Z"}
+{"level":"low","message":"Service https://google.com up & running","origin":"C:\\Users\\user\\Desktop\\Henry\\NOC\\src\\domain\\use-cases\\checks\\check-service.ts","timestamp":"2024-12-11T21:14:45.308Z"}
+{"level":"low","message":"Service https://google.com up & running","origin":"check-service.ts","timestamp":"2024-12-11T21:15:50.350Z"}
+{"level":"low","message":"Service https://google.com up & running","origin":"check-service.ts","timestamp":"2024-12-11T21:15:55.255Z"}
+{"level":"low","message":"Service https://google.com up & running","origin":"check-service.ts","timestamp":"2024-12-11T21:16:00.253Z"}
+{"level":"low","message":"Service https://google.com up & running","origin":"check-service.ts","timestamp":"2024-12-11T21:16:05.251Z"}
+{"level":"low","message":"Service https://google.com up & running","origin":"check-service.ts","timestamp":"2024-12-11T21:16:10.251Z"}
+{"level":"low","message":"Service https://google.com up & running","origin":"check-service.ts","timestamp":"2024-12-11T21:45:30.383Z"}
+{"level":"low","message":"Service https://google.com up & running","origin":"check-service.ts","timestamp":"2024-12-11T21:45:35.229Z"}
+{"level":"low","message":"Service https://google.com up & running","origin":"check-service.ts","timestamp":"2024-12-11T21:45:40.243Z"}
+{"level":"low","message":"Service https://google.com up & running","origin":"check-service.ts","timestamp":"2024-12-11T21:45:45.370Z"}
+{"level":"low","message":"Service https://google.com up & running","origin":"check-service.ts","timestamp":"2024-12-11T21:45:50.241Z"}
+{"level":"low","message":"Service https://google.com up & running","origin":"check-service.ts","timestamp":"2024-12-11T21:45:55.260Z"}
+{"level":"low","message":"Service https://google.com up & running","origin":"check-service.ts","timestamp":"2024-12-11T21:46:03.650Z"}
+{"level":"low","message":"Service https://google.com up & running","origin":"check-service.ts","timestamp":"2024-12-11T21:46:06.034Z"}
+{"level":"low","message":"Service https://google.com up & running","origin":"check-service.ts","timestamp":"2024-12-11T21:46:35.449Z"}
+{"level":"low","message":"Service https://google.com up & running","origin":"check-service.ts","timestamp":"2024-12-11T21:52:30.406Z"}
+{"level":"low","message":"Service https://google.com up & running","origin":"check-service.ts","timestamp":"2024-12-11T21:52:35.254Z"}
+{"level":"low","message":"Service https://google.com up & running","origin":"check-service.ts","timestamp":"2024-12-11T21:52:40.243Z"}
+{"level":"low","message":"Log of the sent email message","origin":"send-logs.ts","timestamp":"2024-12-16T20:53:47.371Z"}
+{"level":"low","message":"Log of the sent email message","origin":"send-logs.ts","timestamp":"2024-12-16T20:55:52.103Z"}
