@@ -1,4 +1,4 @@
-import { LogDataSource } from "../../domain/datasources/log.datasource";
+import { LogDataSource } from "../../domain/datasources/log.datasource.general.model";
 import { LogEntity, LogSeverityLevel } from "../../domain/entities/log.entity";
 import { LogRepository } from "../../domain/repositories/log.repository";
 

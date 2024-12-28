@@ -13,4 +13,11 @@ export const envs = {
   MAILER_SENDER: env.get("MAILER_SENDER").required().asString(),
   MAILER_SECURE: env.get("MAILER_SECURE").default("false").required().asBool(),
   MAILER_RECEIVER: env.get("MAILER_RECEIVER").required().asString(),
+
+  // Mongo instance properties
+
+  MONGO_URI: env.get("MONGO_URI").required().asString(),
+  MONGO_DB_NAME: env.get("MONGO_DB_NAME").required().asString(),
+  MONGO_USER: env.get("MONGO_USER").required().asString(),
+  MONGO_PASS: env.get("MONGO_PASS").required().asString(),
 };

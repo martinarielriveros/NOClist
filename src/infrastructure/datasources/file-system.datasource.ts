@@ -1,6 +1,6 @@
 import fs from "fs";
 
-import { LogDataSource } from "../../domain/datasources/log.datasource";
+import { LogDataSource } from "../../domain/datasources/log.datasource.general.model";
 import { LogEntity, LogSeverityLevel } from "../../domain/entities/log.entity";
 
 export class FileSystemDataSource extends LogDataSource {
@@ -22,10 +22,12 @@ export class FileSystemDataSource extends LogDataSource {
   // }
   #getJSONLogs(pathToFile: string): LogEntity[] {
     const data = fs.readFileSync(pathToFile, "utf8");
-    return data
-      .split("\n")
-      .filter((log) => log.trim()) // Avoid empty lines
-      .map(LogEntity.rebuildLog); // inside map function i can avoid the only argument as it is passed through
+    return data === ""
+      ? []
+      : data
+          .split("\n")
+          .filter((log) => log.trim()) // Avoid empty lines
+          .map(LogEntity.rebuildLog); // inside map function i can avoid the only argument as it is passed through
   }
 
   constructor() {
@@ -68,7 +70,6 @@ export class FileSystemDataSource extends LogDataSource {
         throw new Error(`Invalid log severity level: ${log.level}`);
     }
   }
-
   async getLogs(severityLevel: LogSeverityLevel): Promise<LogEntity[]> {
     switch (severityLevel) {
       case LogSeverityLevel.low:

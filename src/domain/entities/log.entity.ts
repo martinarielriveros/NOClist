@@ -1,8 +1,10 @@
+import { ObjectId } from "mongodb";
+
 export enum LogSeverityLevel {
-  low = "low",
-  medium = "medium",
-  high = "high",
-  critical = "critical",
+  low = "LOW",
+  medium = "MEDIUM",
+  high = "HUGH",
+  critical = "CRITICAL",
 }
 
 interface entityI {
@@ -10,6 +12,16 @@ interface entityI {
   message: string;
   origin: string;
   timestamp?: Date;
+}
+
+export interface postgreBaseDocument extends entityI {
+  id: number;
+}
+
+export interface mongoBaseDocument extends entityI {
+  _id: ObjectId;
+  type: string;
+  __v?: number;
 }
 
 export class LogEntity {
@@ -33,6 +45,26 @@ export class LogEntity {
   // Static methods are properties of the class, not the instance.
   static rebuildLog = (json: string) => {
     const { level, message, origin, timestamp } = JSON.parse(json);
+    const log = new LogEntity({
+      level,
+      message,
+      origin,
+      timestamp,
+    });
+    return log;
+  };
+  static rebuildLogFromMongo = (json: mongoBaseDocument): LogEntity => {
+    const { level, message, origin, timestamp } = json;
+    const log = new LogEntity({
+      level,
+      message,
+      origin,
+      timestamp,
+    });
+    return log;
+  };
+  static rebuildLogFromPostgre = (json: postgreBaseDocument): LogEntity => {
+    const { level, message, origin, timestamp } = json;
     const log = new LogEntity({
       level,
       message,
